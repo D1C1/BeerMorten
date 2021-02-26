@@ -24,23 +24,25 @@ namespace BeerMorten.Tests
         [TestMethod()]
         public void NameTest()
         {
-            beer1.Name = "Good beer";
-            Assert.AreEqual("Good beer",beer1.Name);
+            beer1.Name = "beer";
+            Assert.AreEqual("beer",beer1.Name);
             Assert.ThrowsException<ArgumentException>(() => beer1.Name = "bdb");
         }
         [TestMethod()]
         public void PriceTest()
         {
-            beer1.Price = 30;
-            Assert.AreEqual(30,beer1.Price);
+            beer1.Price = 1;
+            Assert.AreEqual(1,beer1.Price);
             Assert.ThrowsException<ArgumentException>(() => beer1.Price = 0);
             Assert.ThrowsException<ArgumentException>(() => beer1.Price = -1);
         }
         [TestMethod()]
         public void AbvTest()
         {
-            beer1.Abv = 5.5;
-            Assert.AreEqual(5.5,beer1.Abv);
+            beer1.Abv = 0;
+            Assert.AreEqual(0,beer1.Abv);
+            beer1.Abv = 100;
+            Assert.AreEqual(100, beer1.Abv);
             Assert.ThrowsException<ArgumentOutOfRangeException>(() => beer1.Abv = -1);
             Assert.ThrowsException<ArgumentOutOfRangeException>(() => beer1.Abv = 101);
         }
