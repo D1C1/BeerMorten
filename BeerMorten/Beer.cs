@@ -4,33 +4,45 @@ namespace BeerMorten
 {
     public class Beer
     {
-        private int _id;
+        private double _abv;
         private string _name;
         private int _price;
-        private int _abv;
 
-        public int Id
-        {
-            get => _id;
-            set { _id = value; }
-        }
+        public int Id { get; set; }
 
         public string Name
         {
             get => _name;
-            set { _name = value; }
+            set
+            {
+                if (value.Length < 4) throw new ArgumentException();
+                _name = value;
+            }
         }
 
         public int Price
         {
             get => _price;
-            set { _price = value; }
+            set
+            {
+                if (value <= 0) throw new ArgumentException();
+                _price = value;
+            }
         }
 
-        public int Abv
+        public double Abv
         {
             get => _abv;
-            set { _abv = value; }
+            set
+            {
+                if (value < 0 || value > 100) throw new ArgumentOutOfRangeException();
+                _abv = value;
+            }
+        }
+
+        public override string ToString()
+        {
+            return $"Nr. {Id} Name {Name} abv is {Abv} with a price of {Price}";
         }
     }
 }

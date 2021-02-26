@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.30709.132
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeerMorten", "BeerMorten\BeerMorten.csproj", "{5399BA7D-8352-4E1C-B0DA-9A17AE291EE4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeerMortenTests", "BeerMortenTests\BeerMortenTests.csproj", "{0D2FF891-B095-47FA-B560-D9656939374B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{5399BA7D-8352-4E1C-B0DA-9A17AE291EE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5399BA7D-8352-4E1C-B0DA-9A17AE291EE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5399BA7D-8352-4E1C-B0DA-9A17AE291EE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D2FF891-B095-47FA-B560-D9656939374B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D2FF891-B095-47FA-B560-D9656939374B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D2FF891-B095-47FA-B560-D9656939374B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D2FF891-B095-47FA-B560-D9656939374B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
