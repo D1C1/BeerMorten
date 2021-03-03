@@ -16,6 +16,11 @@ namespace BeerMorten
             Price = price;
         }
 
+        public Beer()
+        {
+            
+        }
+
         public int Id { get; set; }
 
         public string Name
