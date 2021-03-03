@@ -13,7 +13,7 @@ namespace BeerMorten.Tests
         [TestInitialize]
         public void init()
         {
-            beer1 = new Beer();
+            beer1 = new Beer(1,0,"beer",1);
         }
         [TestMethod()]
         public void IdTest()

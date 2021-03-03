@@ -8,6 +8,14 @@ namespace BeerMorten
         private string _name;
         private int _price;
 
+        public Beer(int id, double abv, string name, int price)
+        {
+            Id = id;
+            Abv = abv;
+            Name = name;
+            Price = price;
+        }
+
         public int Id { get; set; }
 
         public string Name
